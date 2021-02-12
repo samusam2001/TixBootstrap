@@ -83,11 +83,193 @@ body{
   outline: none;
   box-shadow: none;
   border: none;
-  background-color: black;
+}
+
+.header .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(128,128,128, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 
 /*END HEADER*/
+
+
+/* CAROUSEL */
+.carousel {
+  position: relative;
+}
+
+.carousel .owl-theme .custom-nav {
+  position: absolute;
+  top: 30%;
+  left: 1%;
+  right: 1%;
+}
+.carousel .owl-theme .custom-nav .owl-prev,
+.carousel .owl-theme .custom-nav .owl-next {
+  position: absolute;
+  height: 100px;
+  background: none;
+  border: none;
+  z-index: 100;
+}
+.carousel .owl-theme .custom-nav .owl-prev i,
+.carousel .owl-theme .custom-nav .owl-next i {
+  font-size: 2.5rem;
+  color: #cecece;
+}
+.carousel .owl-theme .custom-nav .owl-prev {
+  left: 0;
+}
+.carousel .owl-theme .custom-nav .owl-next {
+  right: 0;
+}
+
+.carousel .owl-theme .owl-dots {
+  position: absolute;
+  top:70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel .owl-theme .owl-dots .owl-dot span{
+  background-color: #cccccc;
+  width:12px;
+  height: 12px;
+}
+
+.carousel .owl-theme  .owl-dot.active span{
+  background-color: #fb4226;
+}
+
+.carousel .owl-theme .owl-dot:focus{
+  outline: none;
+}
+.carousel .owl-item, .item {
+  height: 100vh;
+}
+
+.carousel .owl-theme .owl-dots .owl-dot {
+  margin: 0 -3px;
+}
+
+.carousel__detail{
+  display: block;
+  max-width: 940px;
+  height: 80px;
+  position: absolute;
+  bottom: 7%;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  z-index: 2;
+  
+}
+.carousel__detail .carousel__detail__item__div,.carousel__detail .carousel__detail__item_btn{
+  transform: translateY(30px);
+}
+
+.carousel__detail .carousel__detail__select{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    width: 100%;
+    background-image: url("../img/dropdown-icon.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 100px;
+}
+
+.carousel__detail .line{
+  margin-top: 25px;
+}
+.carousel__detail .btn-black{
+  background-color: #4a4a4a;
+  border-radius: 4px;
+  padding: 10px 25px;
+  color: white;
+  transform: translateY(-13px);
+}
+
+
+/*END CAROUSEL*/
+
+@media screen and (max-width: 992px){
+  /*CAROUSEL*/
+ .carousel__detail{
+  display: none;
+ }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1000px){
+  /*CAROUSEL*/
+  .carousel__detail{
+    bottom: 23%;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1050px){
+  /*CAROUSEL*/
+  .carousel__detail{
+    bottom: 22%;
+  }
+}
+
+@media screen and (min-width: 1051px) and (max-width: 1124px){
+  /*CAROUSEL*/
+  .carousel__detail{
+    bottom: 17%;
+  }
+}
+
+@media screen and (min-width: 1124px) and (max-width: 1150px){
+  /*CAROUSEL*/
+  .carousel__detail{
+    bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 578px){
+  /*CAROUSEL*/
+ .carousel{
+  display: none;
+ }
+}
+
+@media screen and (min-width: 579px) and (max-width: 650px){
+  /*CAROUSEL*/
+  .carousel .owl-theme .custom-nav {
+    top: 10%;
+  }
+  .carousel .owl-theme .owl-dots {
+    top:30%;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px){
+  /*CAROUSEL*/
+  .carousel .owl-theme .custom-nav {
+    top: 15%;
+  }
+  .carousel .owl-theme .owl-dots {
+    top:35%;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1080px){
+  /*CAROUSEL*/
+  .carousel .owl-theme .custom-nav {
+    top: 20%;
+  }
+  .carousel .owl-theme .owl-dots {
+    top:50%;
+  }
+}
 
 @media screen and (min-width: 851px) and (max-width: 982px){
   /*HEADER*/
@@ -101,6 +283,7 @@ body{
   .header .header__navbar__center{
     display: none;
   }
+
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
@@ -154,7 +337,11 @@ body{
     background-color: white;
     transition: all .6s ease;
   }
+
+
 }
+
+
 
 
 
