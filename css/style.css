@@ -29,6 +29,18 @@ body{
   border-right-color: #e9e9e9;
 }
 
+a,a:hover{
+  text-decoration: none;
+}
+
+.hrLine{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid gray;
+}
+
+
 
 
 /*HEADER*/
@@ -196,14 +208,157 @@ body{
   transform: translateY(-13px);
 }
 
+/* END CAROUSEL */
+
+/* FOOTER */
+footer{
+  background-color: #222;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #949494;
+}
+
+.footer{
+  width:80%;
+  margin: auto;
+}
+
+.footer__title {
+  color: #fff;
+  font-size: 80%;
+}
+
+.footer__tix__link{
+  font-size: 12px;
+  font-size: 80%;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #949494;
+  display: block;
+  transition: all .2s;
+  line-height: 2.3;
+}
+
+.footer__tix__link:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.footer__dt__item{
+  margin-bottom: 15px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+.footer__dt__image{
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+  background-color: white;
+  transition: all .2s;
+}
+
+.footer__dt__image:hover{
+  opacity: 0.7;
+}
+
+.footer__mb__icon{
+  background: 0 0;
+  height: 30px;
+  width: auto;
+  margin: 5px;
+}
+
+.copyright__image{
+  text-align: center;
+  padding: 0;
+}
+
+
+.copyright__image__icon{
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.copyright__param{
+  color: #fff;
+  white-space: nowrap;
+  font-size: 70%;
+}
+
+.copyright__param span{
+  display: block;
+  line-height: 1.8;
+  color: #949494;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.copyright__param span:first-child{
+  color: #fff;
+}
+
+.copyright__image__bct{
+  width: 130px;
+  float: right;
+}
+
+
+/* END FOOTER */
+
 
 /*END CAROUSEL*/
+
+@media screen and (max-width: 578px){
+  /*CAROUSEL*/
+ .carousel{
+  display: none;
+ }
+}
 
 @media screen and (max-width: 992px){
   /*CAROUSEL*/
  .carousel__detail{
   display: none;
  }
+
+ /* FOOTER */
+ .footer .hideOnMobile{
+   display: none;
+ }
+
+ .footer .textCenter{
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+ }
+
+ .footer .textCenter a{
+  display: inline-block;
+  margin: 5px;
+ }
+
+ .footer .copyright__image__icon{
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.copyright__param span{
+  white-space: initial;
+  text-align: center;
+}
+.copyright__image__bct{
+  display: block;
+  margin: auto;
+  float: none;
+}
+
 }
 
 @media screen and (min-width: 991px) and (max-width: 1000px){
@@ -234,12 +389,6 @@ body{
   }
 }
 
-@media screen and (max-width: 578px){
-  /*CAROUSEL*/
- .carousel{
-  display: none;
- }
-}
 
 @media screen and (min-width: 579px) and (max-width: 650px){
   /*CAROUSEL*/
