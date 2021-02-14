@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+.slick-loading .slick-list
+{
+    background: #fff url('../img/ajax-loader.gif') center center no-repeat;
+}
+
 @font-face {
   font-family: MyFont;
   src: url('../font/SF-UI-Text-Regular.otf');
@@ -111,109 +116,74 @@ a,a:hover{
 
 
 /* CAROUSEL */
-/* .carousel {
-  position: relative;
+.carousel .slick-prevs {
+  background-image: url("../img/back-session.png");
+  left: 15px;
 }
 
-.carousel .owl-theme .custom-nav {
-  position: absolute;
-  top: 30%;
-  left: 1%;
-  right: 1%;
+.carousel__image{
+  cursor: pointer;
 }
-.carousel .owl-theme .custom-nav .owl-prev,
-.carousel .owl-theme .custom-nav .owl-next {
+
+
+.carousel .slick-nexts {
+  background-image: url("../img/next-session.png");
+  right: 15px;
+}
+
+.carousel .slick-arrow{
   position: absolute;
-  height: 100px;
-  background: none;
+  top: 45%;
+  transform: translateY(-50%);
+  background-color: transparent;
   border: none;
-  z-index: 100;
-}
-.carousel .owl-theme .custom-nav .owl-prev i,
-.carousel .owl-theme .custom-nav .owl-next i {
-  font-size: 2.5rem;
-  color: #cecece;
-}
-.carousel .owl-theme .custom-nav .owl-prev {
-  left: 0;
-}
-.carousel .owl-theme .custom-nav .owl-next {
-  right: 0;
-}
-
-.carousel .owl-theme .owl-dots {
-  position: absolute;
-  top:70%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.carousel .owl-theme .owl-dots .owl-dot span{
-  background-color: #cccccc;
-  width:12px;
-  height: 12px;
-}
-
-.carousel .owl-theme  .owl-dot.active span{
-  background-color: #fb4226;
-}
-
-.carousel .owl-theme .owl-dot:focus{
-  outline: none;
-}
-.carousel .owl-item, .item {
-  height: 100vh;
-}
-
-.carousel .owl-theme .owl-dots .owl-dot {
-  margin: 0 -3px;
-}
-
-.carousel__detail{
-  display: block;
-  max-width: 940px;
-  height: 80px;
-  position: absolute;
-  bottom: 7%;
-  width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  width: 50px;
+  height: 100px;
   z-index: 2;
-  
-}
-.carousel__detail .carousel__detail__item__div,.carousel__detail .carousel__detail__item_btn{
-  transform: translateY(30px);
-}
-
-.carousel__detail .carousel__detail__select{
-    background-color: transparent;
-    border: none;
-    color: #000;
-    cursor: pointer;
-    width: 100%;
-    background-image: url("../img/dropdown-icon.png");
-    background-repeat: no-repeat;
-    background-position: calc(100% - 8px);
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    padding-right: 100px;
+  opacity: .5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.carousel__detail .line{
-  margin-top: 25px;
+.carousel .slick-dots{
+  position: absolute;
+  bottom: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 0;
 }
-.carousel__detail .btn-black{
-  background-color: #4a4a4a;
-  border-radius: 4px;
-  padding: 10px 25px;
-  color: white;
-  transform: translateY(-13px);
-} */
 
-/* END CAROUSEL */
+
+.carousel .slick-dots li {
+  display: inline-block;
+  margin-right: -3px;
+}
+
+.carousel .slick-dots li button {
+  background-color: #d8d8d8;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  color: transparent;
+}
+
+.carousel .slick-dots li button:before {
+  content: '';
+	font-family: none;
+  font-size: 0;
+}
+
+.carousel .slick-dots li.slick-active button{
+  background-color: #fa5238;
+}
+
+
+
+
+
 
 /* FOOTER */
 footer{
@@ -547,9 +517,9 @@ footer{
 
 @media screen and (max-width: 575.98px){
   /*CAROUSEL*/
- /* .carousel{
+ .carousel{
   display: none;
- } */
+ }
 
  .news__item1__title{
     margin-bottom: 5px;
