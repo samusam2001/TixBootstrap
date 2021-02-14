@@ -311,7 +311,80 @@ footer{
 /* END FOOTER */
 
 
-/*END CAROUSEL*/
+/* MOBILE */
+.mobile{
+  padding: 120px 0 80px 0;
+  background: url("../img/backapp.jpg");
+  background-size: contain;
+}
+
+.mobile__container{
+  width:80%;
+  margin: auto;
+}
+
+.mobile__text__title{
+  color: #fff;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.mobile__text__small{
+  color: #fff;
+  font-size: medium;
+}
+
+.btn-orange{
+  background-color: #fb4226;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: medium;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn-orange:hover{
+  color: #fff;
+}
+
+.btn-orange:active{
+  box-shadow: none;
+}
+
+.mobile__text__phone{
+  color: #fff;
+  padding-top: 10px;
+}   
+
+.mobile__text__phone a{
+  color:#fff;
+}
+
+.mobile__image {
+  padding: 0 28%;
+}
+
+.mobile__carousel{
+  position: relative;
+  padding: 0;
+}
+
+.mobile__slider{
+  position: absolute;
+  padding: 1.5% 29.3% 0 29.3%;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mobile__slider .slick-list{
+  border-radius: 20px;
+}
+
+/* END MOBILE */
+
+
 
 @media screen and (max-width: 575.98px){
   /*CAROUSEL*/
@@ -359,6 +432,20 @@ footer{
     float: none;
   }
 
+  /* MOBILE */
+  .mobile{
+    padding-top: 70px;
+  }
+  
+  .mobile__text__title{
+    font-size: 1.8em;
+  }
+  
+  .mobile__text__small{
+    font-size: 1em;
+    margin: 2px;
+  }
+  
 
 }
 

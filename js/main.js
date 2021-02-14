@@ -1,18 +1,18 @@
-//CAROUSEL
-$('.carousel .owl-carousel').owlCarousel({
-  margin: 0,
-  loop: true,
-  autoplay:true,
-  autoplayTimeout:5000,
-  autoplayHoverPause:true,
-  navText: [
-      '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-      '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-  ],
-  navContainer: '.carousel .custom-nav',
-  responsive:{
-      0:{
-          items: 1
-      },
-  }
-});
+$('.mobile__slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows:false,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
