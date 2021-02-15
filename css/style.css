@@ -116,22 +116,22 @@ a,a:hover{
 
 
 /* CAROUSEL */
-.carousel .slick-prevs {
+.carousel__image .slick-prevs {
   background-image: url("../img/back-session.png");
   left: 15px;
 }
 
-.carousel__image{
+.carousel__item__image{
   cursor: pointer;
 }
 
 
-.carousel .slick-nexts {
+.carousel__image .slick-nexts {
   background-image: url("../img/next-session.png");
   right: 15px;
 }
 
-.carousel .slick-arrow{
+.carousel__image .slick-arrow{
   position: absolute;
   top: 45%;
   transform: translateY(-50%);
@@ -146,7 +146,7 @@ a,a:hover{
   background-size: contain;
 }
 
-.carousel .slick-dots{
+.carousel__image .slick-dots{
   position: absolute;
   bottom: 16%;
   left: 50%;
@@ -155,12 +155,12 @@ a,a:hover{
 }
 
 
-.carousel .slick-dots li {
+.carousel__image .slick-dots li {
   display: inline-block;
   margin-right: -3px;
 }
 
-.carousel .slick-dots li button {
+.carousel__image .slick-dots li button {
   background-color: #d8d8d8;
   width: 12px;
   height: 12px;
@@ -170,14 +170,57 @@ a,a:hover{
   color: transparent;
 }
 
-.carousel .slick-dots li button:before {
+.carousel__image .slick-dots li button:before {
   content: '';
 	font-family: none;
   font-size: 0;
 }
 
-.carousel .slick-dots li.slick-active button{
+.carousel__image .slick-dots li.slick-active button{
   background-color: #fa5238;
+}
+
+.carousel__detail{
+  display: block;
+  max-width: 940px;
+  margin: auto;
+  height: 80px;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+  z-index: 2;
+}
+
+.carousel__detail .carousel__detail__item__div,.carousel__detail .carousel__detail__item_btn{
+  transform: translateY(30px);
+}
+.carousel__detail .carousel__detail__select{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    width: 100%;
+    background-image: url("../img/dropdown-icon.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 8px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 100px;
+}
+.carousel__detail .line{
+  margin-top: 25px;
+}
+.carousel__detail .btn-black{
+  background-color: #4a4a4a;
+  border-radius: 4px;
+  padding: 10px 25px;
+  color: white;
+  transform: translateY(-13px);
 }
 
 
@@ -530,10 +573,10 @@ footer{
 
 
 @media screen and (max-width: 992px){
-  /*CAROUSEL*/
- /* .carousel__detail{
-  display: none;
- } */
+  /* CAROUSEL*/ 
+  .carousel__detail{
+    display: none;
+  }
 
    /* FOOTER */
    .footer .hideOnMobile{

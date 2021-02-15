@@ -10,7 +10,7 @@ $('.mobile__slider').slick({
 });
 
 //CAROUSEL
-$('.carousel').slick({
+$('.carousel__image').slick({
   dots: true,
   infinite: true,
   speed: 300,
