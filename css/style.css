@@ -69,7 +69,6 @@ a,a:hover{
 .header__navbar__center .nav-item{
   font-size: 13px;
   margin-right: 5px;
-  letter-spacing: 0.2px;
 }
 
 .header__navbar__center .nav-item .nav-link{
@@ -414,7 +413,7 @@ footer{
 
 .news__container{
   width:80%;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .news__title{
@@ -556,6 +555,77 @@ footer{
 }
 /* END NEWS */
 
+/* FILMS2 */
+.films2__container{
+  width: 95%;
+  margin: auto;
+}
+
+.films2__detail{
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.films2__image{
+  width: 100%;
+  border-radius: 4px;
+}
+
+.films2__age{
+  font-size: 14px;
+  background-color: #fb4226;
+  border-radius: 4px;
+  padding: 0 5px;
+  color: #fff;
+  min-width: 33px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.films2__ratting{
+  font-size: 16px;
+  background-color: rgba(12,27,54,.8);
+  border: 1px solid #1f2e46;
+  border-radius: 4px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #fff;
+  width: 54px;
+  text-align: center;
+  line-height: 1.1;
+  height:40px;
+}
+
+.films2__points{
+  text-align: center;
+  transform: scaleY(1.2);
+}
+
+.films2__star{
+  display: inline-block;
+  max-width: 8px;
+  border-radius: 4px;
+}
+
+.films2__starhalf{
+  display: inline-block;
+  max-width: 10px;
+}
+
+
+/*END FILMS2*/
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 575.98px){
@@ -568,6 +638,16 @@ footer{
     margin-bottom: 5px;
     height: 20px;
   }
+
+
+}
+
+@media screen and (max-width: 767px){
+  /*CAROUSEL*/
+  .carousel{
+    display: none;
+  }
+
 }
 
 
@@ -624,13 +704,19 @@ footer{
     font-size: 1em;
     margin: 2px;
   }
-  
+
   /* NEWS */
   .news__container{
     width:95%;
   }
 
+  /* MOBILE */
+  .mobile__container{
+    width:95%;
+  }
+
 }
+
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
   .header .header__navbar__center{
@@ -652,6 +738,7 @@ footer{
     font-size: 18px;
     color: #000;
   }
+
 
   #myNav.collapse {
     position: fixed;
@@ -684,8 +771,19 @@ footer{
     transition: all .6s ease;
   }
 
+  .news__title{
+    font-size: 16px;
+  }
+
+  .news__item3__detail{
+    font-size: 14px;
+  }
+
+
 
 }
+
+
 
 
 
