@@ -699,11 +699,167 @@ footer{
   max-width: 10px;
 }
 
-
-
-
-
 /* END FILMS 1 */
+
+
+/*THERATERS */
+
+.theaters{
+  background: url("../img/back-news.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+}
+
+
+.theaters__container{
+  max-width: 940px;
+  margin: auto;
+}
+
+.theaters__cinema__list {
+  min-height: 705px;
+  width: 92px;
+  float: left;
+  border: 1px solid #ebebec;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.theaters__cinema__list li {
+  padding: 25px 0;
+  float: none;
+  list-style-type: none;
+}
+
+.theaters__cinema__list li a {
+  padding: 20px;
+  position: relative;
+  transition: all .2s;
+}
+
+.theaters__cinema__list img {
+  width: 50px;
+}
+
+.theaters__cinema__list li.active a img {
+  opacity: 1;
+}
+
+.theaters__cinema__list li a img {
+  opacity: 0.5;
+}
+
+.theaters__cinema__list li a:after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  width: calc(100% - 40px);
+  transform: translateX(-50%);
+  border-bottom: 1px solid #fff;
+  border-color: rgba(238,238,238,.88);
+}
+
+.theaters__film__list{
+  float: left;
+  min-height: 705px;
+  border-top: 1px solid #ebebec;
+  border-bottom: 1px solid #ebebec;
+  width: 30%;
+  overflow-y: hidden;
+}
+
+
+
+.theaters__film__cinema:first-child {
+  padding-top: 20px;
+}
+.theaters__film__cinema.active {
+  opacity: 1;
+}
+.theaters__film__cinema {
+  padding: 15px;
+  padding-left: 20px;
+  float: left;
+  clear: both;
+  width: 100%;
+  position: relative;
+  opacity: .5;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.theaters__film__image {
+  width: 50px;
+  float: left;
+}
+
+.theaters__film__cinema .theaters__film__detail {
+  padding-left: 60px;
+}
+
+.theaters__film__cinema span {
+  display: block;
+  line-height: 1.4;
+}
+
+.theaters__film__title{
+  font-size: 14px;
+  color: #000;
+}
+
+.theaters__film__childTitle{
+  color: #8bc541;
+  display: inline-block!important;
+}
+
+.theaters__film__info{
+  font-size: 12px;
+  color: #949494;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;  
+}
+
+.theaters__film__link a{
+  color: #fb4226!important;
+  font-size: 12px;
+}
+
+.theaters__film__cinema:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: calc(100% - 40px);
+  transform: translateX(-50%);
+  border-bottom: 1px solid #fff;
+  border-color: rgba(238,238,238,.88);
+}
+
+.theaters__film{
+  float: left;
+  min-height: 705px;
+  width: calc(100% - 30% - 92px);
+  border: 1px solid #ebebec;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.theaters__film__empty{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+
+
+
+/* END THERATERS */
 
 
 
