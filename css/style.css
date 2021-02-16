@@ -562,6 +562,10 @@ footer{
 }
 
 .films2__detail{
+  cursor: pointer;
+}
+
+.films2__detail{
   margin-bottom: 10px;
   position: relative;
 }
@@ -620,6 +624,86 @@ footer{
 
 /*END FILMS2*/
 
+
+/*FILMS 1 */
+.films1__container{
+  max-width: 940px;
+  margin: auto;
+}
+
+.films1__image{
+  border-radius: 4px;
+}
+
+.films1__item{
+  padding: 20px 10px 0;
+  margin-bottom: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.films1__item__age{
+  font-size: 14px;
+  background-color: #fb4226;
+  border-radius: 4px;
+  padding: 0 5px;
+  color: #fff;
+  min-width: 33px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.films1__item__title{
+  font-size: 16px;
+  color: #000;
+  line-height: 22px;
+}
+
+.films1__item__time{
+  font-size: 13px;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+  margin-top: 8px;
+}
+
+.films1__ratting{
+  font-size: 16px;
+  background-color: rgba(12,27,54,.8);
+  border: 1px solid #1f2e46;
+  border-radius: 4px;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #fff;
+  width: 54px;
+  text-align: center;
+  line-height: 1.1;
+  height:40px;
+}
+
+.films1__points{
+  text-align: center;
+  transform: scaleY(1.2);
+}
+
+.films1__star{
+  display: inline-block;
+  max-width: 8px;
+  border-radius: 4px;
+}
+
+.films1__starhalf{
+  display: inline-block;
+  max-width: 10px;
+}
+
+
+
+
+
+/* END FILMS 1 */
 
 
 
